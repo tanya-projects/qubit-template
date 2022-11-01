@@ -18,7 +18,7 @@
       <nav class="header__nav">
         <img class="header__logo" src="/img/Logo.svg" alt="Logo" />
         <ul class="header__nav-items">
-          <li class="nav__item">
+          <li class="nav__item hidden__desktop">
             <a href="#why" class="nav__link">Why Qubit</a>
           </li>
           <li class="nav__item">
@@ -27,7 +27,7 @@
           <li class="nav__item">
             <a href="#solutions" class="nav__link">Solutions</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item hidden__desktop">
             <a href="#customers" class="nav__link">Customers</a>
           </li>
           <li class="nav__item">
@@ -36,9 +36,15 @@
           <li class="nav__item">
             <a href="#resources" class="nav__link">Resources</a>
           </li>
-          <li class="nav__item"><a href="#more" class="nav__link">More</a></li>
+          <li class="nav__item" id="more">
+            More
+            <!-- <a href="#more" class="nav__link" id="more">More</a> -->
+          </li>
         </ul>
         <button class="nav__button primary__btn">Book a Demo</button>
+        <!--  -->
+        <!-- <i class="bi bi-list"></i> -->
+        <!--  -->
       </nav>
       <section class="header__section">
         <img
@@ -71,7 +77,7 @@
     </header>
 
     <main>
-      <section class="subsection">
+      <section id="customers" class="section">
         <p class="subsection__title">Trusted by world-class brands.</p>
         <div class="subsection__customers">
           <img
@@ -161,11 +167,12 @@
         </div>
       </section>
 
-      <section class="section section__02">
+      <section id="solutions" class="section section__02">
         <h2 class="section__title">Qubit CommerceAI.</h2>
         <p class="section__text">The new way to drive growth.</p>
-        <div class="content__flex">
-          <div class="flex__item">
+
+        <div class="content__grid">
+          <div class="grid__item">
             <img src="./img/icon1.svg" alt="icon" />
             <h3>More insight</h3>
             <p>
@@ -173,7 +180,7 @@
               automated insights you can action.
             </p>
           </div>
-          <div class="flex__item">
+          <div class="grid__item">
             <img src="./img/icon2.svg" alt="icon" />
             <h3>More personal</h3>
             <p>
@@ -181,7 +188,7 @@
               customer interaction more relevant.
             </p>
           </div>
-          <div class="flex__item">
+          <div class="grid__item">
             <img src="./img/icon3.svg" alt="icon" />
             <h3>More effective</h3>
             <p>
@@ -191,7 +198,7 @@
           </div>
         </div>
       </section>
-      <section class="section section__03">
+      <section id="products" class="section section__03">
         <h2 class="section__title">All the power. Easy to use.</h2>
         <p class="section__text">
           By collaborating with real ecommerce teams we've built the next-gen
@@ -203,6 +210,7 @@
           <button class="secondary__btn">Book a Demo</button>
         </div>
       </section>
+
       <section class="section section__04">
         <h2 class="section__title">What you can do with Qubit.</h2>
         <div class="content__grid">
@@ -255,8 +263,207 @@
           </div>
         </div>
       </section>
+      <section id="cases" class="section section__05">
+        <h2 class="section__title">Trusted by leading brands.</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/card1.png" alt="" />
+            <h4>Clinique</h4>
+            <p>
+              Clinique builds relationships with millions of customers each
+              year.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/card2.png" alt="" />
+            <h4>River Island</h4>
+            <p>
+              River Island transforms the customer experience with
+              personalization.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/card3.png" alt="" />
+            <h4>MandM Direct</h4>
+            <p>
+              MandM Direct drives increase in revenue with deep learning recs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section section__06">
+        <h2 class="section__title">We specialize in your industry.</h2>
+        <p class="section__text">
+          Learn how we are delivering personalization at scale across sectors.
+        </p>
+        <div class="content__grid grid__2">
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.1.svg" alt="icon" />
+              <h4>Beauty and cosmetics</h4>
+            </div>
+            <p>
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.2.svg" alt="icon" />
+              <h4>Fashion</h4>
+            </div>
+            <p>Supercharge merchandising. Reach your best customers.</p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.3.svg" alt="icon" />
+              <h4>Luxury</h4>
+            </div>
+            <p>Drive brand experience online. Look after your VIPs.</p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.4.svg" alt="icon" />
+              <h4>Airlines</h4>
+            </div>
+            <p>
+              Increase loyalty. Boost ancillary sales. Capture every
+              opportunity.
+            </p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.5.svg" alt="icon" />
+              <h4>Travel & tourism</h4>
+            </div>
+            <p>Be persuasive. Inspire travellers. Drive revenue.</p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+          <div class="grid__item grid__item-2">
+            <div class="grid__header">
+              <img src="./img/icon6.6.svg" alt="icon" />
+              <h4>Online betting</h4>
+            </div>
+            <p>
+              Bring events to life. Personalize in real time. Be responsible.
+            </p>
+            <button class="primary__btn">Exprore...</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__01 section__07">
+        <div class="section__header">
+          <h2 class="section__title">A connected ecosystem.</h2>
+          <p>
+            The Qubit personalization platform is designed with enterprise and
+            high-growth businesses in mind.
+          </p>
+
+          <p>
+            Our open ecosystem approach means you can connect any data source
+            and deliver personalization across any channel.
+          </p>
+
+          <button class="primary__btn">See our integrations</button>
+        </div>
+
+        <div class="section__body">
+          <img src="./img/section-img.png" alt="Qubit ecosystem" />
+        </div>
+      </section>
+
+      <section class="section section__08">
+        <h2 class="section__title">Book a demo</h2>
+        <form class="header__form">
+          <input
+            type="email"
+            class="header__input"
+            placeholder="Enter your email"
+            autocomplete="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <button class="header__btn primary__btn">Book a demo</button>
+        </form>
+      </section>
+
+      <section class="section section__09">
+        <img src="./img/award.svg" alt="Award" />
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="section contacts">
+        <h5>Connect with us</h5>
+        <div class="contact__links">
+          <a href="#" class="contact__link"><i class="bi bi-facebook"></i></a
+          ><a href="#" class="contact__link"><i class="bi bi-twitter"></i></a
+          ><a href="#" class="contact__link"><i class="bi bi-linkedin"></i></a
+          ><a href="#" class="contact__link"><i class="bi bi-instagram"></i></a
+          ><a href="#" class="contact__link"><i class="bi bi-youtube"></i></a>
+        </div>
+      </section>
+
+      <section class="section footer">
+        <div class="footer__subsections">
+          <div class="footer__subsection footer__subsection-01">
+            <h6>Featured Capabilities</h6>
+            <ul>
+              <li><a href="#">A/B Testing</a></li>
+              <li><a href="#">Abandonment recovery</a></li>
+              <li><a href="#">Customer insights</a></li>
+              <li><a href="#">Customer polling and feedback</a></li>
+              <li><a href="#">Customer segmentation</a></li>
+              <li><a href="#">Data collection</a></li>
+              <li><a href="#">Ecommerce merchandising</a></li>
+              <li><a href="#">Custom machine learning</a></li>
+              <li><a href="#">Journey Personalization</a></li>
+              <li><a href="#">Mobile app personalization</a></li>
+              <li><a href="#">Cross-channel personalization</a></li>
+              <li><a href="#">Social proofing</a></li>
+              <li><a href="#">Website personalization</a></li>
+            </ul>
+          </div>
+          <div class="footer__subsection">
+            <h6>Products</h6>
+            <ul>
+              <li><a href="#">1:1 Product recommendations</a></li>
+              <li><a href="#">1:1 Product badging</a></li>
+              <li><a href="#">1:1 Journey personalization</a></li>
+              <li><a href="#">Personalized content</a></li>
+              <li><a href="#">Product insights</a></li>
+            </ul>
+          </div>
+          <div class="footer__subsection">
+            <h6>Resources</h6>
+            <ul>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Qubit Blog</a></li>
+              <li><a href="#">Glossary</a></li>
+            </ul>
+          </div>
+          <div class="footer__subsection">
+            <h6>Company</h6>
+            <ul>
+              <li><a href="#">Why Qubit</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Working with us</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <img src="./img/logo-white.svg" alt="Logo" />
+        <p>&copy; 2021 Qubit. All rights reserved</p>
+      </section>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
