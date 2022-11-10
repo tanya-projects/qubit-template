@@ -12,11 +12,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
   </head>
   <body>
     <header>
       <nav class="header__nav">
-        <img class="header__logo" src="/img/Logo.svg" alt="Logo" />
+        <button class="menu__btn">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </button>
+        <img class="header__logo" src="./img/Logo.svg" alt="Logo" />
+
         <ul class="header__nav-items">
           <li class="nav__item hidden__desktop">
             <a href="#why" class="nav__link">Why Qubit</a>
@@ -36,15 +43,10 @@
           <li class="nav__item">
             <a href="#resources" class="nav__link">Resources</a>
           </li>
-          <li class="nav__item" id="more">
-            More
-            <!-- <a href="#more" class="nav__link" id="more">More</a> -->
-          </li>
+          <!-- <button class="close__menu">&#215;</button> -->
         </ul>
+
         <button class="nav__button primary__btn">Book a Demo</button>
-        <!--  -->
-        <!-- <i class="bi bi-list"></i> -->
-        <!--  -->
       </nav>
       <section class="header__section">
         <img
@@ -79,37 +81,58 @@
     <main>
       <section id="customers" class="section">
         <p class="subsection__title">Trusted by world-class brands.</p>
-        <div class="subsection__customers">
-          <img
-            src="./img/client-logo1.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo2.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo3.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo4.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo5.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo6.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          /><img
-            src="./img/client-logo7.svg"
-            alt="Customer Logo"
-            class="subsection__img"
-          />
-        </div>
+
+        <ul class="subsection__customers">
+          <li class="customer__content">
+            <img
+              src="./img/client-logo1.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo2.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo3.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo4.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo5.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo6.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+          <li class="customer__content">
+            <img
+              src="./img/client-logo7.svg"
+              alt="Customer Logo"
+              class="subsection__img"
+            />
+          </li>
+        </ul>
         <a href="#" class="section__link subsection__link"
           >Meet our customers</a
         >
@@ -395,6 +418,7 @@
         <img src="./img/award.svg" alt="Award" />
       </section>
     </main>
+
     <footer>
       <section class="section contacts">
         <h5>Connect with us</h5>
